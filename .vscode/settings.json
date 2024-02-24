@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "actix"
+    ],
+    "rust-analyzer.linkedProjects": [
+        ".\\Cargo.toml"
     ]
 }

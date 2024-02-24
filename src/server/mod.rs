@@ -1,6 +1,5 @@
-use actix_web::{get, HttpResponse, Responder};
+mod proxy;
+mod routes;
 
-#[get("/")]
-pub async fn hello() -> impl Responder {
-    HttpResponse::Ok().body("Hello world!")
-}
+pub use proxy::*;
+pub use routes::*;
