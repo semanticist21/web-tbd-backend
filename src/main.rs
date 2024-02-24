@@ -18,7 +18,6 @@ async fn main() -> std::io::Result<()> {
             .allowed_methods(allowed);
 
         App::new().wrap(cors).service(server::hello)
-        // .service(server::proxy)
     })
     .bind([base_addr, backend_port].join(":").as_str())?
     .run()
